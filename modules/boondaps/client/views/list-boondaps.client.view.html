@@ -1,0 +1,22 @@
+<section>
+  <div class="page-header">
+    <h1>Boondaps</h1>
+  </div>
+  <div class="list-group">
+    <a data-ng-repeat="boondap in vm.boondaps"
+       data-ui-sref="boondaps.view({ boondapId: boondap._id })"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span data-ng-bind="boondap.created | date:'mediumDate'"></span>
+        by
+        <span data-ng-if="boondap.user" data-ng-bind="boondap.user.displayName"></span>
+        <span data-ng-if="!boondap.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" data-ng-bind="boondap.name"></h4>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.boondaps.$resolved && !vm.boondaps.length">
+    No Boondaps yet, why don't you <a data-ui-sref="boondaps.create">create one</a>?
+  </div>
+</section>

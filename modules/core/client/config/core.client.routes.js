@@ -13,6 +13,12 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 
     // Home state routing
     $stateProvider
+      .state('boonda-route', {
+        url: '/boonda-route',
+        templateUrl: 'modules/core/client/views/boonda-route.client.view.html',
+        controller: 'BoondaRouteController',
+        controllerAs: 'vm'
+      })
     .state('home', {
       url: '/',
       templateUrl: 'modules/core/client/views/home.client.view.html'
