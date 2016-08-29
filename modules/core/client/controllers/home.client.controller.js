@@ -20,12 +20,12 @@ angular.module('core').controller('HomeController', ['$scope', 'Authentication',
         contactMethod: 'Email'
       },
       {
-        href: 'https://github.com/crashog',
+        href: 'https://github.com/Boonda-P',
         fa: 'fa-github',
         contactMethod: 'Github'
       },
       {
-        href: 'https://www.facebook.com/Celestiaku',
+        href: 'https://www.facebook.com/Boonda_P',
         fa: 'fa-facebook',
         contactMethod: 'Facebook'
       },

@@ -122,14 +122,11 @@ h4 {
   border:#000 solid 1px;
 }
 .detailscontainermiddle {
-  height: 100%;
-  background-image: url("thoscene-picture.jpg");
-  background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: 100px;
-  background-position-x: 6%;
-  width: 100%;
+  background-position-y: 17%;
+  background-position-x: 47%;
+  width: 1000px;
+  height: 463px;
 }
 .detailscontaineroutter {
   height: 386px;
@@ -183,13 +180,6 @@ h4 {
 .page-header {
   border-bottom:none
 }
-.port-pre-2,
-.port-pre-1,
-.port-pre-0 {
-  /*border-radius:99925px;*/
-  /*border:1px solid #000;*/
-  /*border-bottom:none!important;*/
-}
 form.paypal1 {
   position: fixed;
   top: 15px;
@@ -214,4 +204,85 @@ form.paypal1 {
   width:50%;
   text-align: center;
   float: none;
+}
+
+
+
+/* Parallax base styles
+--------------------------------------------- */
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+}
+
+
+/* demo styles
+--------------------------------------------- */
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font: 100% / 1.5 Arial;
+}
+
+.parallax {
+  font-size: 200%;
+}
+
+/* add some padding to force scrollbars */
+.parallax__layer {
+  padding: 100vh 0;
+}
+
+/* centre the content in the parallax layers */
+/*.title {*/
+  /*position: absolute;*/
+  /*left: 50%;*/
+  /*top: 50%;*/
+  /*-webkit-transform: translate(-50%, -50%);*/
+  /*transform: translate(-50%, -50%);*/
+/*}*/
+
+
+/* misc
+--------------------------------------------- */
+.demo__info {
+  position: absolute;
+  z-index:100;
+  bottom: 1vh;
+  top: auto;
+  font-size:80%;
+  text-align:center;
+  width: 100%;
+}
+.port-pre-0 {
+  z-index: 1;
+}
+.port-pre-2, .port-pre-1 {
+  z-index: 2;
 }

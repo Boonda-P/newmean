@@ -29,15 +29,20 @@ var PortfolioSchema = new Schema({
     default: '',
     required: 'Please add link'
   },
-  leftimage: {
+  mobileimage: {
     type: String,
     default: '',
-    required: 'Please add Left Image'
+    required: 'Please add Mobile Image'
   },
-  rightimage: {
+  desktopimage: {
     type: String,
     default: '',
-    required: 'Please add Right Image'
+    required: 'Please add Desktop Image'
+  },
+  picture: {
+    type: String,
+    default: '',
+    required: 'Please add Picture'
   }
 });
 
