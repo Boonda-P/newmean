@@ -13,7 +13,7 @@ var PortfolioSchema = new Schema({
   name: {
     type: String,
     default: '',
-    required: 'Please fill Work name',
+    required: 'Please fill work name',
     trim: true
   },
   created: {
@@ -32,17 +32,22 @@ var PortfolioSchema = new Schema({
   mobileimage: {
     type: String,
     default: '',
-    required: 'Please add Mobile Image'
+    required: 'Please add mobile image'
   },
   desktopimage: {
     type: String,
     default: '',
-    required: 'Please add Desktop Image'
+    required: 'Please add desktop image'
   },
   picture: {
     type: String,
     default: '',
-    required: 'Please add Picture'
+    required: 'Please add picture'
+  },
+  description: {
+    type: String,
+    default: '',
+    required: 'Please add description'
   }
 });
 
