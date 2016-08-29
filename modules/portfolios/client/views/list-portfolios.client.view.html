@@ -20,49 +20,49 @@
     <!--</div>-->
   <!--</div>-->
 
-  <div data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'" class="list-group-item">
-  <table>
-      <a data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">
-        <h4 class="list-group-item-heading" data-ng-bind="vm.portfolio.name"></h4>
-        <thead>
-        <tr>
-          <th>Details</th>
-          <th>Mobile</th>
-          <th>Desktop</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-          <th>{{portfolio.name}}</th>
-          <th>{{portfolio.mobileimage}}</th>
-          <th>{{portfolio.desktopimage}}</th>
-        </tr>
-        </tfoot>
-        <tbody>
-        <tr>
-          <th></th>
-        </tr>
-        </tbody>
-      </a>
-      <div class="alert alert-warning text-center" data-ng-if="vm.portfolios.$resolved && !vm.portfolios.length">
-        No Portfolios yet, why don't you <a data-ui-sref="portfolios.create">create one</a>?
-      </div>
-    </table>
-  </div>
-
   <!--<div data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'" class="list-group-item">-->
-    <!--<a data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">-->
-      <!--<h4 class="list-group-item-heading" data-ng-bind="portfolio.name"></h4>-->
-      <!--<h5>Details</h5>-->
-      <!--<p>Thoscene is a customization platform where users can create jewelry based on their birthdate and astrological information.<p>-->
-      <!--<h5>Mobile</h5>-->
-      <!--<img ng-src="{{portfolio.leftimage}}">-->
-      <!--<h5 class="whiteboxwithborders">Desktop</h5>-->
-      <!--<img ng-src="{{portfolio.rightimage}}">-->
-    <!--</a>-->
+  <!--<table>-->
+      <!--<a data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">-->
+        <!--<h4 class="list-group-item-heading" data-ng-bind="vm.portfolio.name"></h4>-->
+        <!--<thead>-->
+        <!--<tr>-->
+          <!--<th>Details</th>-->
+          <!--<th>Mobile</th>-->
+          <!--<th>Desktop</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tfoot>-->
+        <!--<tr>-->
+          <!--<th>{{portfolio.name}}</th>-->
+          <!--<th>{{portfolio.mobileimage}}</th>-->
+          <!--<th>{{portfolio.desktopimage}}</th>-->
+        <!--</tr>-->
+        <!--</tfoot>-->
+        <!--<tbody>-->
+        <!--<tr>-->
+          <!--<th></th>-->
+        <!--</tr>-->
+        <!--</tbody>-->
+      <!--</a>-->
+      <!--<div class="alert alert-warning text-center" data-ng-if="vm.portfolios.$resolved && !vm.portfolios.length">-->
+        <!--No Portfolios yet, why don't you <a data-ui-sref="portfolios.create">create one</a>?-->
+      <!--</div>-->
+    <!--</table>-->
   <!--</div>-->
-  <!--<div class="alert alert-warning text-center" data-ng-if="vm.portfolios.$resolved && !vm.portfolios.length">-->
-    <!--No Portfolios yet, why don't you <a data-ui-sref="portfolios.create">create one</a>?-->
-  <!--</div>-->
+
+  <div data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'" class="list-group-item">
+    <a data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">
+      <h4 class="list-group-item-heading" data-ng-bind="portfolio.name"></h4>
+      <h5>Details</h5>
+      <p>Thoscene is a customization platform where users can create jewelry based on their birthdate and astrological information.<p>
+      <h5>Mobile</h5>
+      <img ng-src="{{portfolio.leftimage}}">
+      <h5 class="whiteboxwithborders">Desktop</h5>
+      <img ng-src="{{portfolio.rightimage}}">
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.portfolios.$resolved && !vm.portfolios.length">
+    No Portfolios yet, why don't you <a data-ui-sref="portfolios.create">create one</a>?
+  </div>
 
 </section>
