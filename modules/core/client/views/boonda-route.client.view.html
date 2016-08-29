@@ -1,5 +1,27 @@
-<section>
-  Click anywhere to leave a comment dot.
-  <br>
-  Dots expire after 60 seconds
-</section>
+<h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Layer {{layernumber}}</h1>
+<input value="Layer 0" onclick="layernumber = 1" type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"/>
+<input value="Layer 1" onclick="" type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"/>
+<input value="Layer 2" onclick="" type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"/>
+<input value="Layer 3" onclick="" type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"/>
+<input value="Layer 4" onclick="" type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"/>
+<input value="Layer 5" onclick="" type="button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"/>
+<container ng-if="layernumber == 0" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <section class="cell col-xs-2 col-sm-2 col-md-2 col-lg-2" ng-repeat="val in matrix[0].layer0[0].row0">
+      ({{val.layer}}, {{val.row}}, {{val.column}})
+  </section>
+  <section class="cell col-xs-2 col-sm-2 col-md-2 col-lg-2" ng-repeat="val in matrix[0].layer0[0].row1">
+    ({{val.layer}}, {{val.row}}, {{val.column}})
+  </section>
+  <section class="cell col-xs-2 col-sm-2 col-md-2 col-lg-2" ng-repeat="val in matrix[0].layer0[0].row2">
+    ({{val.layer}}, {{val.row}}, {{val.column}})
+  </section>
+  <section class="cell col-xs-2 col-sm-2 col-md-2 col-lg-2" ng-repeat="val in matrix[0].layer0[0].row3">
+    ({{val.layer}}, {{val.row}}, {{val.column}})
+  </section>
+  <section class="cell col-xs-2 col-sm-2 col-md-2 col-lg-2" ng-repeat="val in matrix[0].layer0[0].row4">
+    ({{val.layer}}, {{val.row}}, {{val.column}})
+  </section>
+  <section class="cell col-xs-2 col-sm-2 col-md-2 col-lg-2" ng-repeat="val in matrix[0].layer0[0].row5">
+    ({{val.layer}}, {{val.row}}, {{val.column}})
+  </section>
+</container>

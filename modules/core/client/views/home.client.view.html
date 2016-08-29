@@ -1,11 +1,5 @@
-<section ng-controller="HomeController">
-  <div class="jumbotron text-center">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <img alt="Boonda_P" class="centerfix img-responsive text-center" src="modules/core/client/img/brand/logo.jpg" />
-      </div>
-    </div>
-    <br>
+<section class="homeOutter" ng-controller="HomeController">
+  <div class="jumbotron text-center col-lg-6 col-md-6">
     <div class="row">
       <p class="lead">
         I am Boonda P
@@ -13,8 +7,39 @@
     </div>
     <div class="row">
       <p>
-        Stay a while and listen.
+        <img class="dummy col-lg-12 col-md-12 col-sm-12 col-xs-12" src="{{mypic}}" />
       </p>
     </div>
+    <div class="row">
+      <p class="lead">
+        Let's Build Something
+      </p>
+    </div>
+    <div ng-repeat="contactmet in contactmets">
+      <a target="_blank" href="{{contactmet.href}}"><button type="button" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 quartered btn btn-default"><i class="fa {{contactmet.fa}}" aria-hidden="true"></i> {{contactmet.contactMethod}}</button></a>
+    </div>
+  </div>
+  <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="row">
+      <p class="lead">
+        Check Out My Previous Work
+      </p>
+    </div>
+    <h1>
+      thoscene.com
+    </h1>
+    <h1>
+      johnbrevard.com
+    </h1>
+    <h3>
+      beachfragrances.com
+    </h3>
+    <h3>
+      randazzossauces.com
+    </h3>
+    <h3>
+      murphsfamous.com
+    </h3>
+
   </div>
 </section>

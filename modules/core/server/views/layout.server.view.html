@@ -31,6 +31,12 @@
   <!-- Fav Icon -->
   <link href="{{favicon}}" rel="shortcut icon" type="image/x-icon">
 
+  <!-- Fonts -->
+  <link rel="stylesheet" href="modules/core/client/css/font-awesome/css/font-awesome.min.css">
+  <link href="//db.onlinewebfonts.com/c/ffd0dcc47a9002be89cc7f900d4e144f?family=AvenirNextLTW01-UltraLight" rel="stylesheet" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
   <!-- Application CSS Files -->
   {% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
 </head>
@@ -38,7 +44,7 @@
 <body class="ng-cloak">
   <header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
   <section class="content">
-    <section class="container">
+    <section class="container-fluid">
       {% block content %}{% endblock %}
     </section>
   </section>

@@ -1,0 +1,35 @@
+<section>
+  <div class="page-header">
+    <h1>My Work</h1>
+  </div>
+  <div class="fluid-container list-group">
+    <div data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'"
+    class="porfoliopreview col-lg-12 col-md-12 list-group-item">
+      <a data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">
+        <h4 class="port-pre-head text-center list-group-item-heading" data-ng-bind="portfolio.name"></h4>
+        <div class="port-pre-0 detailscontaineroutter text-center col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h5 class="whiteboxwithborders">Details</h5>
+          <div class="detailscontainermiddle text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="detailscontainerinner">
+              Thoscene is a customization platform where users can create jewelry based on their birthdate and astrological information.
+            </div>
+          </div>
+        </div>
+        <div class="port-pre-1 text-center col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h5 class="whiteboxwithborders">Mobile</h5>
+            <img class="mobileimage col-sm-12 col-xs-12" ng-src="{{portfolio.leftimage}}">
+          </div>
+        </div>
+
+        <div class="port-pre-2 text-center col-lg-5 col-md-5 col-sm-12 col-xs-12">
+          <h5 class="whiteboxwithborders">Desktop</h5>
+          <img class="nopadding desktop fullwidth col-sm-12 col-xs-12" ng-src="{{portfolio.rightimage}}">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="vm.portfolios.$resolved && !vm.portfolios.length">
+    No Portfolios yet, why don't you <a data-ui-sref="portfolios.create">create one</a>?
+  </div>
+</section>

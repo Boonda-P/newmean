@@ -23,7 +23,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 
       // Redirect after save
       article.$save(function (response) {
-        $location.path('articles/' + response._id);
+        $location.path('blog/' + response._id);
 
         // Clear form fields
         $scope.title = '';
@@ -45,7 +45,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
         }
       } else {
         $scope.article.$remove(function () {
-          $location.path('articles');
+          $location.path('blog');
         });
       }
     };
@@ -63,7 +63,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
       var article = $scope.article;
 
       article.$update(function () {
-        $location.path('articles/' + article._id);
+        $location.path('blog/' + article._id);
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });
