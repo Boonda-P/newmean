@@ -16,7 +16,7 @@ angular.module('articles').config(['$stateProvider',
       })
       .state('articles.top10s', {
         url: '/top10s',
-        template: '<top-10s>test</top-10s>'
+        templateUrl: 'modules/articles/client/views/top10s.client.view.html'
       })
       .state('articles.create', {
         url: '/create',

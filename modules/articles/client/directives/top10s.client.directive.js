@@ -9,7 +9,7 @@
 
   function top10s(/*Example: $state, $window */) {
     return {
-      template: '<div></div>',
+      template: '<div class="text-center"></div>',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
         // Top10s directive logic

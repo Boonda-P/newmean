@@ -4,8 +4,8 @@ module.exports = {
   app: {
     title: 'I Am Boonda P',
     description: 'Web Developer',
-    keywords: 'mongodb, express, angularjs, node.jspassport',
-    googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
+    keywords: 'Web Development',
+    googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'UA-83435315-1'
   },
   port: process.env.PORT || 3000,
   templateEngine: 'swig',
@@ -22,7 +22,7 @@ module.exports = {
     secure: false
   },
   // sessionSecret should be changed for security measures and concerns
-  sessionSecret: process.env.SESSION_SECRET || 'MEAN',
+  sessionSecret: process.env.SESSION_SECRET || 'TIMEX',
   // sessionKey is set to the generic sessionId key used by PHP applications
   // for obsecurity reasons
   sessionKey: 'sessionId',
