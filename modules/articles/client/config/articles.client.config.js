@@ -19,6 +19,24 @@ angular.module('articles').run(['Menus',
 
     // Add the dropdown list item
     Menus.addSubMenuItem('topbar', 'articles', {
+      title: 'Music',
+      state: 'articles.music'
+    });
+
+    // Add the dropdown list item
+    Menus.addSubMenuItem('topbar', 'articles', {
+      title: 'Games',
+      state: 'articles.games'
+    });
+
+    // Add the dropdown list item
+    Menus.addSubMenuItem('topbar', 'articles', {
+      title: 'Tech',
+      state: 'articles.tech'
+    });
+
+    // Add the dropdown list item
+    Menus.addSubMenuItem('topbar', 'articles', {
       title: 'Top 10s',
       state: 'articles.top10s'
     });

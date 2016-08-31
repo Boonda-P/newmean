@@ -18,6 +18,18 @@ angular.module('articles').config(['$stateProvider',
         url: '/top10s',
         templateUrl: 'modules/articles/client/views/top10s.client.view.html'
       })
+      .state('articles.music', {
+        url: '/music',
+        templateUrl: 'modules/articles/client/views/music.client.view.html'
+      })
+      .state('articles.games', {
+        url: '/games',
+        templateUrl: 'modules/articles/client/views/games.client.view.html'
+      })
+      .state('articles.tech', {
+        url: '/tech',
+        templateUrl: 'modules/articles/client/views/tech.client.view.html'
+      })
       .state('articles.create', {
         url: '/create',
         templateUrl: 'modules/articles/client/views/create-article.client.view.html',

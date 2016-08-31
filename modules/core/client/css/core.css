@@ -123,3 +123,8 @@ p.lead.ng-binding {
     font-size: 40pt!important;
   }
 }
+
+a.btn.btn-primary {
+  z-index: 9;
+  position: relative;
+}

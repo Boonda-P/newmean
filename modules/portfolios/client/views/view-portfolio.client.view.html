@@ -1,6 +1,6 @@
-<section>
+<a>
   <div class="page-header">
-    <h1 data-ng-bind="vm.portfolio.name"></h1>
+    <a ng-href="{{vm.portfolio.link}}"><h1 data-ng-bind="vm.portfolio.name"></h1></a>
   </div>
   <div class="pull-right"
        data-ng-show="vm.portfolio.isCurrentUserOwner">
@@ -13,10 +13,16 @@
     </a>
   </div>
   <div>
+    <div class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <img class="centerfix col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-src="modules/portfolios/client/img/UX-UI.jpg" />
+    </div>
+  <img class="col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-src="modules/portfolios/client/img/thoscene2.gif" />
+    <img class="col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-src="modules/portfolios/client/img/thoscene2.jpg" />
+
 
     <!--<iframe ng-src="{{vm.portfolio.link | trustAsResourceUrl}}"></iframe>-->
   </div>
-  <a ng-href="{{vm.portfolio.link}}">
+
   <div class="parallax">
     <div class="container parallax__layer parallax__layer--back">
       <div  class="row centerfix text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -40,6 +46,7 @@
       </div>
     </div>
   </div>
+
   <p class="lead" data-ng-bind="vm.portfolio.content"></p>
-  </a>
+
 </section>
