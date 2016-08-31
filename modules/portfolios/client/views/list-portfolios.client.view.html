@@ -1,33 +1,30 @@
+<h1 class="text-center ">Click a project to get more info</h1>
 <a data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'" class="list-group-item" data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">
   <div class="parallax">
     <div class="container parallax__layer parallax__layer--back">
-      <div  class="text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div  class="row centerfix text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="title">
           <div class="text-center something">
             <h1>{{portfolio.name}}</h1>
           </div>
         </div>
-        <img class="centerfix col-lg-4 col-md-4 col-sm-12 col-xs-12" src="{{portfolio.picture}}" />
+        <img class="centerfix col-lg-4 col-md-4 col-sm-6 col-xs-8" src="{{portfolio.picture}}" />
       </div>
-
-    </div>
-    <div class="parallax__layer parallax__layer--base">
-      <div class="title container">
-
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="row title centerfix fluid-container">
+        <div class="row small-centerfix col-lg-4 col-md-4 col-sm-6 col-xs-8">
           <div class="text-center box">
-            Mobile
+            <!--<h3>Mobile</h3>-->
+            <br>
           </div>
           <img style="width: 100%;" src="{{portfolio.mobileimage}}" />
         </div>
-
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="row desktopcontainer small-centerfix col-lg-8 col-md-8 col-sm-12 col-xs-12">
           <div class="text-center box">
-            Desktop
+            <!--<h3>Desktop</h3>-->
+            <br>
           </div>
           <img style="width: 100%;" src="{{portfolio.desktopimage}}" />
         </div>
-
       </div>
     </div>
   </div>

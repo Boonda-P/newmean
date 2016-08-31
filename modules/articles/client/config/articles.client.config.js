@@ -17,11 +17,17 @@ angular.module('articles').run(['Menus',
       state: 'articles.list'
     });
 
+    // Add the dropdown list item
+    Menus.addSubMenuItem('topbar', 'articles', {
+      title: 'Top 10s',
+      state: 'articles.top10s'
+    });
+
     // Add the dropdown create item
     Menus.addSubMenuItem('topbar', 'articles', {
       title: 'Create Blog Section',
       state: 'articles.create',
-      roles: ['user']
+      roles: ['user', 'admin']
     });
   }
 ]);

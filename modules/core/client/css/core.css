@@ -35,7 +35,6 @@ a:hover .header-profile-image {
 .has-error .help-inline.error-text {
   display: inline;
 }
-
 .centerfix {
   float: none;
   margin-left: auto;
@@ -50,228 +49,77 @@ a:hover .header-profile-image {
 a.list-group-item.ng-scope {
   border:none;
 }
-
-/*html {*/
-  /*!*background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3f/Internet_map_1024_-_transparent%2C_inverted.png");*!*/
-/*}*/
-/*.cell {*/
-  /*height:100px;*/
-  /*border:1px solid #000;*/
-  /*text-align: center;*/
-/*}*/
-/*.fourhundred {*/
-  /*height: 400px;*/
-  /*width: auto;*/
-  /*float: none;*/
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-/*}*/
-/*.fullwidth {*/
-  /*width:100%;*/
-/*}*/
-/*.quartered {*/
-  /*width: 50%;*/
-/*}*/
-/*iframe {*/
-  /*width:100%;*/
-  /*height: 700px;*/
-/*}*/
-/*.porfoliopreview {*/
-  /*!*height:1000px;*!*/
-  /*padding:0px;*/
-  /*border:1px solid #000;*/
-  /*position:static;*/
-/*}*/
-/*.port-pre-1 {*/
-  /*margin-bottom:15px;*/
-  /*margin-top:15px;*/
-/*}*/
-/*.port-pre-2 {*/
-  /*margin-bottom:15px;*/
-  /*margin-top:15px;*/
-/*}*/
-/*.port-pre-head {*/
-  /*color:#000;*/
-  /*margin-top: 100px;*/
-  /*margin-bottom: 0px;*/
-  /*padding-top:15px;*/
-  /*padding-bottom:15px;*/
-  /*background-color: transparent;*/
-  /*border-top:solid 1px #000;*/
-/*}*/
-/*a,*/
-/*a:focus,*/
-/*a:hover {*/
-  /*text-decoration: none;*/
-  /*color: #000;*/
-  /*font-family: Ubuntu!important;*/
-  /*outline:none;*/
-/*}*/
-/*h4 {*/
-  /*font-family: Megrim!important;*/
-  /*font-size:30pt;*/
-/*}*/
-/*@media (max-width:700px) {*/
-  /*h4 {*/
-    /*font-size:14pt;*/
-  /*}*/
-/*}*/
-/*.detailscontainer {*/
-  /*height: 386px;*/
-  /*background-size: contain;*/
-  /*margin-top: 15px;*/
-  /*background-repeat: no-repeat;*/
-  /*!*background-position: 50%, 50%;*!*/
-  /*background-attachment: fixed;*/
-  /*background-position: center;*/
-/*}*/
-/*.detailscontainerinner {*/
-  /*background-color: transparent;*/
-  /*border:#000 solid 1px;*/
-/*}*/
-/*.detailscontainermiddle {*/
-  /*background-repeat: no-repeat;*/
-  /*background-position-y: 17%;*/
-  /*background-position-x: 47%;*/
-  /*width: 1000px;*/
-  /*height: 463px;*/
-/*}*/
-/*.detailscontaineroutter {*/
-  /*height: 386px;*/
-  /*background-size: contain;*/
-  /*margin-top: 15px;*/
-
-/*}*/
-/*.mobileimage {*/
-  /*margin-top: 15px;*/
-/*}*/
-/*.navbar-inverse {*/
-  /*background-image: none;*/
-/*}*/
-/*.whiteboxwithborders {*/
-  /*background-color: #fff;*/
-  /*border:1px solid #000;*/
-  /*margin-bottom:0px;*/
-/*}*/
-/*.nopadding {*/
-  /*padding: 0px;*/
-/*}*/
-/** {*/
-  /*outline:none;*/
-/*}*/
-/*.navbar-brand {*/
-  /*color: #fff !important;*/
-  /*margin-left: 150px !important;*/
-/*}*/
-/*.navbar-inverse .navbar-toggle {*/
-  /*border-color: #fff;*/
-/*}*/
-/*.desktop {*/
-  /*margin-top: 19px;*/
-/*}*/
-/*@media (min-width:992px) {*/
-  /*.whiteboxwithborders {*/
-    /*background-color: transparent;*/
-    /*border:none;*/
-    /*margin-bottom:0px;*/
-  /*}*/
-/*}*/
-/*.container > .navbar-header {*/
-  /*margin-right:0px;*/
-  /*margin-left:0px;*/
-/*}*/
-/*.col-lg-12.col-md-12.list-group-item.ng-scope {*/
-  /*border-top:none;*/
-  /*border-left: none;*/
-  /*border-right: none;*/
-/*}*/
-/*.page-header {*/
-  /*border-bottom:none*/
-/*}*/
 form.paypal1 {
   position: fixed;
   top: 15px;
   left: 15px;
 }
-/*@media (min-width: 1670px) {*/
-  /*.donation {*/
-    /*display: block;*/
-    /*position: fixed;*/
-    /*top: 15px;*/
-    /*left: 100px;*/
-    /*color: #fff;*/
-  /*}*/
-/*}*/
-/*@media (max-width: 1669px) {*/
-  /*.donation {*/
-    /*display: none;*/
-  /*}*/
-/*}*/
-
-/*.dummy {*/
-  /*width:50%;*/
-  /*text-align: center;*/
-  /*float: none;*/
-/*}*/
-
-/*!**!*/
-
-/*body, html {*/
-  /*height: 100%;*/
-  /*margin: 0;*/
-  /*font: 400 15px/1.8 "Lato", sans-serif;*/
-  /*color: #777;*/
-/*}*/
-
-/*.bgimg-1, .bgimg-2, .bgimg-3 {*/
-  /*position: relative;*/
-  /*opacity: 0.65;*/
-  /*background-attachment: fixed;*/
-  /*background-position: center;*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
-
-/*}*/
-/*.bgimg-1 {*/
-  /*background-image: url("img_parallax.jpg");*/
-  /*min-height: 100%;*/
-/*}*/
-
-/*.bgimg-2 {*/
-  /*background-image: url("img_parallax2.jpg");*/
-  /*min-height: 400px;*/
-/*}*/
-
-/*.bgimg-3 {*/
-  /*background-image: url("img_parallax3.jpg");*/
-  /*min-height: 400px;*/
-/*}*/
-
-/*.caption {*/
-  /*position: absolute;*/
-  /*left: 0;*/
-  /*top: 50%;*/
-  /*width: 100%;*/
-  /*text-align: center;*/
-  /*color: #000;*/
-/*}*/
-
-/*.caption span.border {*/
-  /*background-color: #111;*/
-  /*color: #fff;*/
-  /*padding: 18px;*/
-  /*font-size: 25px;*/
-  /*letter-spacing: 10px;*/
-/*}*/
-
-/*h3 {*/
-  /*letter-spacing: 5px;*/
-  /*text-transform: uppercase;*/
-  /*font: 20px "Lato", sans-serif;*/
-  /*color: #111;*/
-/*}*/
 a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
   color: #555;
   text-decoration: none;
   background-color: transparent;
+}
+
+a.navbar-brand {
+  margin-left: 100px;
+}
+footer {
+  margin-top: 100px;
+  background: #000;
+
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: static;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3, a{
+  font-family: 'Ubuntu', sans-serif!important;
+}
+h1 {
+  font-family: 'Megrim'!important;
+  font-size: 20pt!important;
+}
+header.navbar.navbar-fixed-top.navbar-inverse.ng-scope {
+  background: rgba(0,0,0,0.75);
+}
+p.lead.ng-binding {
+  white-space: pre-wrap;
+}
+
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-image: -webkit-linear-gradient(top, #000 0%, #000 100%);
+    background-image: -o-linear-gradient(top, #000 0%, #000 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#000));
+    background-image: linear-gradient(to bottom, #000 0%, #000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+    background-repeat: repeat-x;
+  }
+}
+@media (min-width: 992px) {
+  .desktopcontainer {
+    margin-left:15px;
+  }
+}
+@media (min-width: 768px) {
+  .container>.navbar-header {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .small-centerfix {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 700px){
+  .title h1 {
+    font-size: 40pt!important;
+  }
 }
