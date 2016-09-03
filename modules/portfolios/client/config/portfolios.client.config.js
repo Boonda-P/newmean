@@ -26,7 +26,7 @@
     Menus.addSubMenuItem('topbar', 'portfolios', {
       title: 'Create New Work',
       state: 'portfolios.create',
-      roles: ['user']
+      roles: ['admin']
     });
   }
 })();

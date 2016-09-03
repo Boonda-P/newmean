@@ -37,6 +37,13 @@ angular.module('articles').config(['$stateProvider',
           roles: ['user', 'admin']
         }
       })
+      // .state('articles.suggest', {
+      //   url: '/suggest',
+      //   template: '<div>test</div>',
+      //   data: {
+      //     roles: ['*']
+      //   }
+      // })
       .state('articles.view', {
         url: '/:articleId',
         templateUrl: 'modules/articles/client/views/view-article.client.view.html'

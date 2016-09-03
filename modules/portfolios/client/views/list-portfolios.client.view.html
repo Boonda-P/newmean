@@ -1,5 +1,4 @@
-<h1 class="text-center ">Click a project to get more info</h1>
-<a data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'" class="list-group-item" data-ui-sref="portfolios.view({ portfolioId: portfolio._id })">
+<a data-ng-repeat="portfolio in vm.portfolios | orderBy:'created'" class="list-group-item" ng-href="{{portfolio.link}}">
   <div class="parallax">
     <div class="container parallax__layer parallax__layer--back">
       <div  class="row centerfix text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">

@@ -18,7 +18,8 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
       // Create new Article object
       var article = new Articles({
         title: this.title,
-        content: this.content
+        content: this.content,
+        category: this.category
       });
 
       // Redirect after save
@@ -28,6 +29,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
         // Clear form fields
         $scope.title = '';
         $scope.content = '';
+        $scope.category = '';
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });
@@ -63,6 +65,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
       var article = $scope.article;
 
       article.$update(function () {
+        var article = $scope.article;
         $location.path('blog/' + article._id);
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;

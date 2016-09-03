@@ -8,7 +8,7 @@ angular.module('articles').run(['Menus',
       title: 'Blog',
       state: 'articles',
       type: 'dropdown',
-      roles: ['*']
+      roles: ['admin']
     });
 
     // Add the dropdown list item
@@ -45,7 +45,14 @@ angular.module('articles').run(['Menus',
     Menus.addSubMenuItem('topbar', 'articles', {
       title: 'Create Blog Section',
       state: 'articles.create',
-      roles: ['user', 'admin']
+      roles: ['admin']
     });
+
+    // // Add the dropdown create item
+    // Menus.addSubMenuItem('topbar', 'articles', {
+    //   title: 'Give a Suggestion',
+    //   state: 'articles.suggest',
+    //   roles: ['*']
+    // });
   }
 ]);

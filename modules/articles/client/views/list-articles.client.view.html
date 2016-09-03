@@ -2,8 +2,12 @@
   <div class="page-header">
     <h1>Blog Sections</h1>
   </div>
+
+
   <div class="list-group">
-    <a ng-repeat="article in articles" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
+
+
+    <a ng-repeat="article in articles" ng-if="article.content != 'Placeholder'" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
       <small class="list-group-item-text">
         Posted on
         <span ng-bind="article.created | date:'mediumDate'"></span>
@@ -12,17 +16,12 @@
       </small>
       <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
       <p class="list-group-item-text" ng-bind="article.content"></p>
+      <p style="color:red;" class="list-group-item-text" ng-bind="article.category"></p>
     </a>
+
+
   </div>
   <div class="alert alert-warning text-center" ng-if="articles.$resolved && !articles.length">
     No articles yet, why don't you <a ui-sref="articles.create">create one</a>?
   </div>
 </section>
-<style>
-  /*button.navbar-toggle {*/
-    /*margin-right: 15px;*/
-  /*}*/
-  button.navbar-toggle {
-    /*margin-right: 55px;*/
-  }
-</style>
