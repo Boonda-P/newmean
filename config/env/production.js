@@ -1,14 +1,11 @@
 'use strict';
 
+var defaultEnvConfig = require('./default');
+
 module.exports = {
-  secure: {
-    ssl: false,
-    privateKey: './config/sslcerts/key.pem',
-    certificate: './config/sslcerts/cert.pem'
-  },
   port: process.env.PORT || 80,
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+    uri: process.env.MONGOHQ_URL || process.env.MONGODB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
     options: {
       user: '',
       pass: ''
@@ -19,21 +16,17 @@ module.exports = {
   log: {
     // logging with Morgan - https://github.com/expressjs/morgan
     // Can specify one of 'combined', 'common', 'dev', 'short', 'tiny'
-    format: process.env.LOG_FORMAT || 'combined',
-    options: {
-      // Stream defaults to process.stdout
-      // Uncomment/comment to toggle the logging to a log on the file system
-      stream: {
-        directoryPath: process.env.LOG_DIR_PATH || process.cwd(),
-        fileName: process.env.LOG_FILE || 'access.log',
-        rotatingLogs: { // for more info on rotating logs - https://github.com/holidayextras/file-stream-rotator#usage
-          active: process.env.LOG_ROTATING_ACTIVE === 'true' ? true : false, // activate to use rotating logs 
-          fileName: process.env.LOG_ROTATING_FILE || 'access-%DATE%.log', // if rotating logs are active, this fileName setting will be used
-          frequency: process.env.LOG_ROTATING_FREQUENCY || 'daily',
-          verbose: process.env.LOG_ROTATING_VERBOSE === 'true' ? true : false
-        }
-      }
+    format: 'dev',
+    fileLogger: {
+      directoryPath: process.cwd(),
+      fileName: 'app.log',
+      maxsize: 10485760,
+      maxFiles: 2,
+      json: false
     }
+  },
+  app: {
+    title: defaultEnvConfig.app.title + ''
   },
   bnet: {
     clientID: process.env.BNET_ID || 'rt2p32bk667x3yzy2r9ufe7f2s42xqde',
@@ -81,10 +74,11 @@ module.exports = {
       }
     }
   },
+  livereload: true,
   seedDB: {
-    seed: process.env.MONGO_SEED === 'true' ? true : false,
+    seed: process.env.MONGO_SEED === 'true',
     options: {
-      logResults: process.env.MONGO_SEED_LOG_RESULTS === 'false' ? false : true,
+      logResults: process.env.MONGO_SEED_LOG_RESULTS !== 'false',
       seedUser: {
         username: process.env.MONGO_SEED_USER_USERNAME || 'user',
         provider: 'local',
@@ -97,7 +91,7 @@ module.exports = {
       seedAdmin: {
         username: process.env.MONGO_SEED_ADMIN_USERNAME || 'admin',
         provider: 'local',
-        email: process.env.MONGO_SEED_ADMIN_EMAIL || 'garyfrey9@gmail.com',
+        email: process.env.MONGO_SEED_ADMIN_EMAIL || 'admin@localhost.com',
         firstName: 'Admin',
         lastName: 'Local',
         displayName: 'Admin Local',
@@ -106,3 +100,6 @@ module.exports = {
     }
   }
 };
+
+
+
