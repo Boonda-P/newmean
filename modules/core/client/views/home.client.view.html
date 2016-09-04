@@ -2,20 +2,17 @@
   <h1 class="text-center lead">
     I am Boonda P
   </h1>
-  <div class="jumbotron text-center col-lg-6 col-md-6">
-    <div class="row">
-      <p>
-        <img class="dummy centerfix text-center col-lg-6 col-md-6 col-sm-6 col-xs-6" src="{{mypic}}" />
-      </p>
-    </div>
+  <div class="jumbotron text-center col-lg-6 col-md-6 col-lg-12 col-md-12">
+    <img ng-src="{{mypic}}" />
     <br>
+    <br>
+    <p>I am a frontend developer. I focus on highly detailed and pixel perfect responsive web interfaces. I am always learning new tools and looking forward to the next project to utilize my vast skillset.</p>
     <div ng-repeat="contactmet in contactmets">
       <a target="_blank" href="{{contactmet.href}}"><button type="button" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 quartered btn btn-default"><i class="fa {{contactmet.fa}}" aria-hidden="true"></i> {{contactmet.contactMethod}}</button></a>
     </div>
   </div>
   <a ng-href="portfolio">
     <div class="jumbotron col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      Check Out My Previous Work
       <h1>
         thoscene.com
       </h1>
@@ -28,9 +25,6 @@
       <h1>
         randazzossauces.com
       </h1>
-      <br>
-      <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">I am a frontend developer. I focus on highly detailed and pixel perfect responsive web interfaces. I am always learning new tools and looking forward to the next project to utilize my vast skillset.</p>
-      <br>
       <div>
         <h1>Tools</h1>
           <ul>
@@ -56,5 +50,4 @@
       </div>
     </div>
   </a>
-
 </section>
