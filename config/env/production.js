@@ -2,13 +2,13 @@
 
 module.exports = {
   secure: {
-    ssl: true,
+    ssl: false,
     privateKey: './config/sslcerts/key.pem',
     certificate: './config/sslcerts/cert.pem'
   },
   port: process.env.PORT || 80,
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
+    uri: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean-prod  ',
     options: {
       user: '',
       pass: ''
@@ -27,7 +27,7 @@ module.exports = {
         directoryPath: process.env.LOG_DIR_PATH || process.cwd(),
         fileName: process.env.LOG_FILE || 'access.log',
         rotatingLogs: { // for more info on rotating logs - https://github.com/holidayextras/file-stream-rotator#usage
-          active: process.env.LOG_ROTATING_ACTIVE === 'true' ? true : false, // activate to use rotating logs 
+          active: process.env.LOG_ROTATING_ACTIVE === 'true' ? true : false, // activate to use rotating logs
           fileName: process.env.LOG_ROTATING_FILE || 'access-%DATE%.log', // if rotating logs are active, this fileName setting will be used
           frequency: process.env.LOG_ROTATING_FREQUENCY || 'daily',
           verbose: process.env.LOG_ROTATING_VERBOSE === 'true' ? true : false
@@ -97,7 +97,7 @@ module.exports = {
       seedAdmin: {
         username: process.env.MONGO_SEED_ADMIN_USERNAME || 'admin',
         provider: 'local',
-        email: process.env.MONGO_SEED_ADMIN_EMAIL || 'admin@localhost.com',
+        email: process.env.MONGO_SEED_ADMIN_EMAIL || 'garyfrey9@gmail.com',
         firstName: 'Admin',
         lastName: 'Local',
         displayName: 'Admin Local',
