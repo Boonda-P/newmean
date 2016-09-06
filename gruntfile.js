@@ -175,6 +175,14 @@ module.exports = function (grunt) {
         }
       }
     },
+    forever: {
+      server1: {
+        options: {
+          index: 'server.js',
+          logDir: 'logs'
+        }
+      }
+    },
     mochaTest: {
       src: testAssets.tests.server,
       options: {
